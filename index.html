@@ -1,1 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Chida y Moderna</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">MiWebChida</div>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+    </nav>
+  </header>
 
+  <section class="hero" id="inicio">
+    <div class="hero-content">
+      <h1>¡Bienvenido a tu página más chida y moderna!</h1>
+      <p>Emociónate con lo último en diseño web, colores vibrantes y animaciones suaves.</p>
+      <a href="#galeria" class="btn-hero">Ver Galería</a>
+    </div>
+    <div class="hero-animation">
+      <div class="bubble bubble1"></div>
+      <div class="bubble bubble2"></div>
+      <div class="bubble bubble3"></div>
+    </div>
+  </section>
+
+  <section class="galeria" id="galeria">
+    <h2>Galería Moderna</h2>
+    <div class="galeria-grid">
+      <div class="card"><img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=500&q=80" alt="img1"><span>Emoción</span></div>
+      <div class="card"><img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=500&q=80" alt="img2"><span>Color</span></div>
+      <div class="card"><img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=500&q=80" alt="img3"><span>Innovación</span></div>
+    </div>
+  </section>
+
+  <section class="contacto" id="contacto">
+    <h2>Contáctame</h2>
+    <form>
+      <input type="text" placeholder="Tu nombre" required>
+      <input type="email" placeholder="Tu email" required>
+      <textarea placeholder="Mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Hecho con ❤️ por Kayocolimot &copy; 2025</p>
+  </footer>
+  <script>
+    // Menú móvil
+    const menuToggle = document.getElementById('mobile-menu');
+    const navLinks = document.querySelector('.nav-links');
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('nav-active');
+    });
+  </script>
+</body>
+</html>
